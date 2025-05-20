@@ -18,7 +18,7 @@ public class NumberGame {
       boolean hasGuessed = false;
     
       System.out.println("\nI've picked a number between 1 and 100. Can you guess it?");
-      System.out.println("You have " + maxAttempts + "attempts.");
+      System.out.println("You have " + maxAttempts +  "attempts.");
       while (attempts < maxAttempts) {
         System.out.print("Enter your guess: ");
         guess = scanner.nextInt();
