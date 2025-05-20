@@ -39,4 +39,15 @@ while (attempts < maxAttempts) {
     System.out.println("Too low!");
   }
 }
+
+if (!hasGuessed) {
+  System.out.println("Out of attempts! The correct number was: " + targetNumber);
+}
+totalRounds++;
+System.out.print("Do you want to play again? (yes/no): ");
+String response = scanner.next();
+
+if (!response.equalsIgnoreCase("yes")) {
+  playAgain = false;
+}
     
