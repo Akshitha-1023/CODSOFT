@@ -22,4 +22,21 @@ while (playAgain) {
   System.out.println("\nI've picked a number between 1 and 100. Can you guess it?");
   System.out.println("You have " + maxAttempts + "attempts.");
 }
+
+while (attempts < maxAttempts) {
+  System.out.print("Enter your guess: ");
+  guess = scanner.nextInt();
+  attempts++;
+
+  if (guess == targetNumber){
+    System.out.println("Correct! You have guessed it in" + attempts + "attempts.");
+    hasGuessed = true;
+    roundsWon++;
+    break;
+  }else if (guess > targetNumber) {
+    System.out.println(" Too high!");
+  }else {
+    System.out.println("Too low!");
+  }
+}
     
