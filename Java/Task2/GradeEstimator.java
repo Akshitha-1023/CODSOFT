@@ -18,3 +18,6 @@ public class GradeEstimator {
         for (int score : scoreArray) {
             cumulativeScore += score;
         }
+        
+        double meanPercentage = (double) cumulativeScore / subjectCount;
+
