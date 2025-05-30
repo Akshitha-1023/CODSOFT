@@ -13,3 +13,8 @@ public class GradeEstimator {
             System.out.print("Enter marks for subject " + (slot + 1) + " (out of 100): ");
             scoreArray[slot] = inputDevice.nextInt();
         }
+
+        int cumulativeScore = 0;
+        for (int score : scoreArray) {
+            cumulativeScore += score;
+        }
