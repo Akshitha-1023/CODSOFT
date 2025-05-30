@@ -35,4 +35,11 @@ public class GradeEstimator {
             gradeSymbol = 'F';
         }
 
-       
+        System.out.println("\n--- Report Card ---");
+        System.out.println("Total Marks: " + cumulativeScore + " out of " + (subjectCount * 100));
+        System.out.printf("Average Percentage: %.2f%%\n", meanPercentage);
+        System.out.println("Final Grade: " + gradeSymbol);
+
+        inputDevice.close();
+    }
+}
