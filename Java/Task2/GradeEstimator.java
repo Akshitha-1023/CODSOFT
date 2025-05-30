@@ -18,6 +18,21 @@ public class GradeEstimator {
         for (int score : scoreArray) {
             cumulativeScore += score;
         }
-        
+
         double meanPercentage = (double) cumulativeScore / subjectCount;
 
+        char gradeSymbol;
+
+        if (meanPercentage >= 90) {
+            gradeSymbol = 'A';
+        } else if (meanPercentage >= 80) {
+            gradeSymbol = 'B';
+        } else if (meanPercentage >= 70) {
+            gradeSymbol = 'C';
+        } else if (meanPercentage >= 60) {
+            gradeSymbol = 'D';
+        } else {
+            gradeSymbol = 'F';
+        }
+
+       
