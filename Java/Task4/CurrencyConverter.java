@@ -1,7 +1,3 @@
-// CurrencyConverter.java
-// Task 4: CodSoft Internship - Currency Converter
-// Note: This is a standalone console program with predefined exchange rates
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
